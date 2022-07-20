@@ -12,11 +12,11 @@
 /* Variables */
 
 :root {
-  --dark: #161616;
+  --dark: #1f2937;
   --light: #ffffff;
   --darkLight: #4d4d4d;
   --bodyBg: #f5f5f5;
-  --primary: #dd0000;
+  --primary: #1d4ed8;
   --fwBold: 700;
   --fwSemiBold: 600;
   --fwRegular: 400;
@@ -102,7 +102,7 @@ header {
 
 .btn-primary {
   border: none;
-  padding: 1.3rem 4rem;
+  padding: 1.5rem 4rem;
   border-radius: 0.5rem;
   text-transform: capitalize;
   font-weight: var(--fwSemiBold);
