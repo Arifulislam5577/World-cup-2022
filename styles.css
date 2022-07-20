@@ -1,0 +1,321 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: all 0.2s;
+}
+
+/* Variables */
+
+:root {
+  --dark: #161616;
+  --light: #ffffff;
+  --darkLight: #4d4d4d;
+  --bodyBg: #f5f5f5;
+  --primary: #dd0000;
+  --fwBold: 700;
+  --fwSemiBold: 600;
+  --fwRegular: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bodyBg);
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0rem 5rem;
+  margin: 0 auto;
+}
+
+/* Animation */
+
+.slide-right {
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.slide-bottom {
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Header styles start here */
+
+header {
+  padding: 3rem 0rem;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.header-text {
+  width: 60%;
+  padding: 4rem 6rem;
+}
+.header-img {
+  align-self: flex-end;
+  width: 40%;
+}
+
+.header-text h1 {
+  color: var(--light);
+  font-size: 7rem;
+  font-weight: var(--fwBold);
+  line-height: 7rem;
+}
+
+.header-text p {
+  font-size: 1.6rem;
+  color: var(--light);
+  font-weight: var(--fwRegular);
+  line-height: 2.6rem;
+  margin: 2rem 0rem;
+}
+
+.btn-primary {
+  border: none;
+  padding: 1.3rem 4rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  font-weight: var(--fwSemiBold);
+  background-color: var(--primary);
+  color: var(--light);
+  cursor: pointer;
+}
+
+.header-img img {
+  width: 100%;
+}
+
+/* Header styles Ends here */
+
+/* Content area styles Start here */
+#content-area {
+  padding: 3rem 0rem;
+}
+.content {
+  display: grid;
+  grid-template-columns: 30rem 1fr;
+  gap: 2rem;
+}
+
+.menu-content ul {
+  list-style: none;
+  background-color: var(--dark);
+  padding: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.menu-content ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--light);
+  font-size: 1.6rem;
+  font-weight: var(--fwSemiBold);
+  padding: 1.5rem 2.5rem;
+  background-color: var(--light);
+  display: block;
+  border-radius: 1rem;
+  border: 1px solid var(--light);
+  color: var(--dark);
+  text-align: center;
+  width: 100%;
+}
+
+.menu-content ul li a.active {
+  background-color: var(--primary);
+  color: var(--light);
+  border: none;
+}
+
+.blogs-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.blog {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.blog .blog-img img {
+  width: 100%;
+}
+
+.blog .blog-description {
+  padding: 1.5rem;
+}
+
+.btn-secondary {
+  border: 1.3px solid var(--dark);
+  padding: 0.5rem 2rem;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  color: var(--dark);
+  font-weight: var(--fwSemiBold);
+  cursor: pointer;
+}
+
+.blog-title {
+  font-size: 1.4rem;
+  font-weight: var(--fwSemiBold);
+  color: var(--dark);
+  margin: 1.5rem 0rem;
+}
+
+.blog-info {
+  display: flex;
+  gap: 2rem;
+}
+
+.blog-info p {
+  font-size: 1.4rem;
+  color: var(--darkLight);
+  font-weight: var(--fwRegular);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.blog-info span {
+  font-size: 1.4rem;
+  color: var(--darkLight);
+}
+
+.blogs .btn {
+  margin: 3rem auto;
+  display: none;
+  width: 20%;
+  padding: 2rem;
+}
+
+/* Match Blog */
+
+.match-blog {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.flags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.flags img {
+  height: 5rem;
+  object-fit: contain;
+}
+.flags span {
+  font-weight: var(--fwSemiBold);
+  font-size: 1.5rem;
+  /* margin: 0 0.5rem; */
+}
+
+.match-info {
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.match-info h2 {
+  font-size: 1.6rem;
+  font-weight: var(--fwSemiBold);
+  color: var(--dark);
+}
+.match-info p {
+  font-size: 1.2rem;
+  font-weight: var(--fwSemiBold);
+  color: var(--darkLight);
+  margin-top: 1rem;
+}
+
+/* Content area styles Ends here */
+
+/* Footer styles Start here */
+
+footer {
+  padding: 5rem 0rem;
+  background-color: var(--dark);
+}
+
+.footer-top h1 {
+  color: var(--light);
+  text-align: center;
+  font-size: 5rem;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid var(--darkLight);
+  width: 100%;
+  display: block;
+  margin: 3rem 0rem;
+}
+
+.footer-menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.footer-menu ul li a {
+  font-size: 1.4rem;
+  color: var(--light);
+  text-decoration: none;
+}
+
+.footer-social-icons {
+  margin-top: 5rem;
+}
+
+.footer-social-icons ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-social-icons ul li a {
+  font-size: 1.6rem;
+  color: var(--light);
+  text-decoration: none;
+}
+/* Footer styles Ends here */
