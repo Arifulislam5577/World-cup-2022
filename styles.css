@@ -113,6 +113,12 @@ header {
   background-color: var(--primary);
   color: var(--light);
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: translateY(-1px);
 }
 
 .header-img img {
@@ -155,6 +161,13 @@ header {
   color: var(--dark);
   text-align: center;
   width: 100%;
+  transition: all 0.5s ease;
+}
+
+.menu-content ul li:hover a {
+  background-color: var(--primary);
+  color: var(--light);
+  border: 1px solid transparent;
 }
 
 .menu-content ul li a.active {
@@ -173,6 +186,11 @@ header {
   border-radius: 1rem;
   overflow: hidden;
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.blog:hover {
+  box-shadow: 5px 10px 4rem rgba(0, 0, 0, 0.1);
 }
 
 .blog .blog-img img {
@@ -303,6 +321,11 @@ footer hr {
   font-size: 1.4rem;
   color: var(--light);
   text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+.footer-menu ul li:hover a {
+  color: var(--primary);
 }
 
 .footer-social-icons {
@@ -319,7 +342,22 @@ footer hr {
 
 .footer-social-icons ul li a {
   font-size: 1.6rem;
-  color: var(--light);
+  color: var(--primary);
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--light);
   text-decoration: none;
+  border-radius: 0.3rem;
+  box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.1);
+}
+
+.footer-social-icons ul li:hover a {
+  color: var(--light);
+  background-color: var(--primary);
+  transform: translateY(-2px);
 }
 /* Footer styles Ends here */
